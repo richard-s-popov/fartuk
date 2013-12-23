@@ -56,7 +56,7 @@ h3 {
   font-size: 20px;
   color: #000;
   font-weight: normal;
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   line-height: 24px;
   margin-bottom: 22px;
 }
@@ -71,7 +71,7 @@ h4 {
   font-size: 15px;
   color: #000;
   font-weight: normal;
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   line-height: 18px;
   margin-bottom: 18px;
 }
@@ -348,7 +348,7 @@ input[type='checkbox'] {
 .navigation ul.sf-menu > li > span {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   color: #ffffff;
   height: 24px;
   text-align: center;
@@ -389,7 +389,7 @@ input[type='checkbox'] {
 .navigation ul.sf-menu ul li span {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   color: #131313;
   display: block;
   padding: 0 20px;
@@ -555,7 +555,7 @@ input[type='checkbox'] {
   display: inline;
   font-size: 11px;
   color: #b41c35;
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
 }
 .item_info_dl dd > * {
@@ -602,10 +602,14 @@ input[type='checkbox'] {
 }
 .moduletable.border_right .mod-menu ul.title li {
   color: #303030;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 25px;
   background: none;
   padding: 0;
+}
+.contact-information h3 {
+    font-size: 25px !important;
+    margin-bottom: 5px !important;
 }
 .mod-menu ul.text {
   padding: 7px 0 20px;
@@ -778,7 +782,7 @@ small {
   line-height: 18px;
   padding: 0 0 4px 16px;
   background: url(../img/footer_menu_marker.png) 0 6px no-repeat;
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
 }
 .archive-module li a,
@@ -798,7 +802,7 @@ small {
 .dropcap {
   float: left;
   color: #000;
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   font-size: 23px;
   width: 30px;
   font-weight: normal;
@@ -840,7 +844,7 @@ small {
   padding: 45px 0 29px;
 }
 .news .item_published {
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   color: #b41c35;
   font-weight: bold;
@@ -941,7 +945,7 @@ small {
   padding: 0px 0px 30px 0;
 }
 .footer_menu .mod-menu .nav.menu li {
-  font-family: 'Asap', sans-serif;
+  font-family: sans-serif;
   display: inline-block;
   text-transform: none;
   padding: 0;

@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.IO;
+using System.Web.Mvc;
 
 namespace fartuk.Controllers
 {
@@ -12,5 +13,12 @@ namespace fartuk.Controllers
             return View();
         }
 
+        public ActionResult GetCatalog()
+        {
+            var fileStream = new FileStream(Server.MapPath("~/Files/catalog_f.pdf"), FileMode.Open, FileAccess.Read);
+
+            Response.AppendHeader("Content-Disposition", "inline");
+            return File(fileStream, "application/pdf");
+        }
     }
 }

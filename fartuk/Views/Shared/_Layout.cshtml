@@ -105,9 +105,9 @@
                                         </div>
                                         <!-- Logo -->
                                         <div id="copyright">
-                                            <span class="year">2013</span>                  
+                                            <span class="year">@DateTime.Now.Year</span>                  
                                             <span class="copy">&copy;</span>                                    
-                                            <a class="privacy_link" href="/joomla_47347/index.php/privacy-policy">Privacy Policy</a>
+                                            <a class="privacy_link" href="#">Privacy Policy</a>
                                         </div>
                                         <!-- {%FOOTER_LINK} -->
                                         <div class="clearfix"></div>
@@ -122,20 +122,27 @@
                                         <div class="row">
                                             <header>
                                                 <div class="moduletable title border_right  span5">
-                                                    <h3 class="moduleTitle ">Welcome!</h3>
+                                                    <h1 class="moduleTitle ">Самые дешёвые стеклянные фартуки в Томске</h1>
                                                     <div class="mod-menu">
                                                         <ul class="nav menu title">
                                                             <li class="item-259">
-                                                                <span class="separator">BRIGHT IDEAS FOR YOUR INTERIOR!</span>                                                            </li>
+                                                                <span class="separator">с бесплатной доставкой и монтажом* за 5-6 рабочих дней, <span style="text-transform: lowercase;">5500р/м<sup>2</sup></span>, найдёте дешевле - сделаем ещё дешевле!</span>                                                            </li>
+                                                            <span>* бесплатный монтаж и доставка при площади фартука от <span style="text-transform: lowercase;">1.5м<sup>2</sup></span></span>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="moduletable  fright  span4">
+                                                <div class="moduletable fright span4 contact-information">
+                                                    <h3>(3822) 34-14-50</h3>
                                                     <div class="mod-menu">
                                                         <ul class="nav menu text">
                                                             <li class="item-258">
-                                                                <span class="separator">Lorem ipsum dolor sit amet, consec tetuer adipi scing.  Praesent vestibu.  lum molestie lacuiirhs. Aenean non ummy ris. Phasellllus. porta. Fusce varius mium sociis tot.</span>                                                            </li>
+                                                                <span class="separator">Часы работы с 10.00 до 20.00</span>                                                            </li>
                                                         </ul>
+                                                        <ul class="nav menu text">
+                                                            <li class="item-258">
+                                                                <span class="separator">Посмотреть все фартуки Вы можете в нашем каталоге. Нажмите на кнопку ниже.</span>                                                            </li>
+                                                        </ul>
+                                                        <a class="btn btn-info readmore" href="@Url.Action("GetCatalog", "Home")" target="_blank"><span>Каталог</span></a>
                                                     </div>
                                                 </div>
                                             </header>
