@@ -1,0 +1,13 @@
+﻿<div class="order-popup">
+    <h4>Запишитесь на <strong>бесплатный</strong> замер!</h4>
+    <p>Ну, божалуйста...</p>
+    @using (Html.BeginForm("OrderFinish", "Home", FormMethod.Post, new {@class = "subscribe"}))
+    {
+        @Html.TextBoxFor(m => m.Name, new { @placeholder = "Как к Вам обращаться" })
+        @Html.TextBoxFor(m => m.Phone, new { @placeholder = "Номер телефона" })
+        @Html.TextBoxFor(m => m.Street, new { @placeholder = "Улица" })
+        @Html.TextBoxFor(m => m.Home, new { @placeholder = "Дом" })
+        @Html.TextBoxFor(m => m.Flat, new { @placeholder = "Квартира" })
+        <input name="submit" type="submit" class="submit" value="Записаться на замер" />
+    }
+</div>

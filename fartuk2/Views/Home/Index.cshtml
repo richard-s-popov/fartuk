@@ -1,0 +1,352 @@
+﻿@{
+    ViewBag.Title = "Самые дешевые стеклянные фартуки в Томске. Кухня фартук. Томск фартуки.";
+}
+@model fartuk2.Models.Order
+
+<!-- .option_panel -->
+<div class="header">
+    <div class="logo">
+        <img src="@Url.Content("~/Content/img/logo.png")" title="Klix" alt="logo" />
+    </div>
+    <!-- .logo -->
+    <div class="callout">
+        <ul class="social">
+            <li class="call">Свяжитесь с нами:&nbsp;&nbsp;<span>(3822) 34-14-50</span></li>
+            <li>Звоните с 10.00 до 20.00</li>
+        </ul>
+    </div>
+    <!-- .callout -->
+    <div class="clearf"></div>
+</div>
+<!-- .header -->
+<div class="container_shadow">
+    <div class="container">
+        <div class="featured">
+            <ul class="cycle_slider">
+                <li>
+                    <img src="@Url.Content("~/Content/img/3.png")" title="Самые дешевые фартуки в Томск" alt="Slide" /></li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/4.png")" title="Самые дешевые фартуки в Томск" alt="Slide" /></li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/1.png")" title="Самые дешевые фартуки в Томск" alt="Slide" /></li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/2.png")" title="Самые дешевые фартуки в Томск" alt="Slide" /></li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/5.png")" title="Самые дешевые фартуки в Томск" alt="Slide" /></li>
+            </ul>
+            <!-- .cycle_slider -->
+            <ul class="cycle_nav"></ul>
+            <div class="promo">
+                <h1>Самые <strong>дешевые</strong> стеклянные фартуки <strong>в Томске!</strong></h1>
+                <p class="big">С бесплатной доставкой и монтажом*<br />за 5-6 рабочих дней, <strong>5500р/м<sup>2</sup></strong><br/>Найдете дешевле - сделаем еще дешевле!</p>
+                <p>* бесплатный монтаж и доставка при площади фартука от 1.5м<sup>2</sup></p>
+                <p>
+                    <a id="orderForm" href="#popup" class="btn">Записаться на бесплатный замер</a> 
+                    <a href="ftp://pngn.ru/catalog_f.pdf" style="margin-left: 10px;" class="btn yellow" target="_blank">Каталог</a>
+                </p>
+                <p><small>Grab a <a href="#"><strong>Trial Download</strong></a> or <a href="#"><strong>Contact us</strong></a> to know more about the offer.
+                       <br />
+                       *The offer is valid only upto the end of December.  Terms and Conditions apply.</small></p>
+            </div>
+            <!-- .promo -->
+        </div>
+        <!-- .featured -->
+        <div class="content">
+            <div class="wrap">
+                <div class="one_fourth">
+                    <img class="ico_left" src="@Url.Content("~/Content/img/star_32.png")" title="Clean Design" alt="icon" /><h3>Multi Purpose</h3>
+                    <p>The template can be used as a standalone click-through landing page or a content oriented micro site.</p>
+                </div>
+                <!-- .one_fourth -->
+                <div class="one_fourth">
+                    <img class="ico_left" src="@Url.Content("~/Content/img/screen_off_32.png")" title="Above the fold" alt="icon" /><h3>Above the Fold</h3>
+                    <p>The main call-to-action and product offer resides above the fold, thereby giving better exposure to the offer. </p>
+                </div>
+                <!-- .one_fourth -->
+                <div class="one_fourth">
+                    <img class="ico_left" src="@Url.Content("~/Content/img/tools_32.png")" title="Easy to customize" alt="icon" /><h3>Easy to customize</h3>
+                    <p>The markup is straight-forward. You just need to fill in the dummy content with your own custom content.</p>
+                </div>
+                <!-- .one_fourth -->
+                <div class="one_fourth last">
+                    <img class="ico_left" src="@Url.Content("~/Content/img/web_layout_32.png")" title="Standard Layout" alt="icon" /><h3>Flexible Grids</h3>
+                    <p>The grids shown on this page can be changed to different combination. Two columns, three columns, full width etc.</p>
+                </div>
+                <!-- .one_fourth last -->
+                <div class="clearf"></div>
+                <!-- clear float -->
+            </div>
+            <!-- .wrap -->
+            <div class="wrap_grey">
+                @*<div class="half">
+                    <h4>Related Products</h4>
+                    <ul class="products">
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_1.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_1.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_2.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_2.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_3.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_3.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_4.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_4.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_5.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_5.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_6.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_6.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_7.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_7.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="prettyPhoto[gallery1]" href="@Url.Content("~/Content/img/full_8.jpg")" title="Product Title">
+                                <img src="@Url.Content("~/Content/img/thumb_8.jpg")" alt="Product image" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>*@
+                <!-- .half -->
+                <div class="half">
+                    <h4>Наши преимущества или еще какая-нибудь вата</h4>
+                    <ul class="checklist">
+                        <li>Marketing and Promotion</li>
+                        <li>Web design and development</li>
+                        <li>Search Engine Optimization</li>
+                        <li>Logo design and branding</li>
+                        <li>Server Side Solutions</li>
+                        <li>Business Consulting</li>
+                        <li>Printing and Media Solutions</li>
+                    </ul>
+                    <!-- .checklist -->
+                </div>
+                <!-- .one_fourth -->
+                <div class="half last order-on-page">
+                    <div id="popup" class="order-popup">
+                        <h4>Запишитесь на <strong>бесплатный</strong> замер!</h4>
+                        <p style="margin-bottom: 5px;">Ну, божалуйста...</p>
+                        @using (Html.BeginForm("OrderFinish", "Home", FormMethod.Post, new {@class = "subscribe"}))
+                        {
+                            <div>
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Как к Вам обращаться" })
+                            </div>
+                            <div>
+                                @Html.TextBoxFor(m => m.Phone, new { @placeholder = "Номер телефона" })
+                            </div>
+                            <div>
+                                @Html.TextBoxFor(m => m.Street, new { @placeholder = "Улица" })
+                            </div>
+                            <div>
+                                @Html.TextBoxFor(m => m.Home, new { @placeholder = "Дом" })
+                            </div>
+                            <div>
+                                @Html.TextBoxFor(m => m.Flat, new { @placeholder = "Квартира" })
+                            </div>
+                            <input name="submit" type="submit" onclick="return false;" class="submit" value="Записаться на замер" />
+                        }
+                    </div>
+                </div>
+                <!-- .one_fourth last -->
+                <div class="clearf"></div>
+                <!-- clear float -->
+            </div>
+            <!-- .wrap_grey -->
+            @*<div class="wrap_secondary">
+                <div class="half">
+                    <h5>Trusted and loved by</h5>
+                    <ul class="clients">
+                        <li><a href="#" title="Client Brand">
+                            <img src="@Url.Content("~/Content/img/client1.jpg")" alt="Client Brand" /></a></li>
+                        <li><a href="#" title="Client Brand">
+                            <img src="@Url.Content("~/Content/img/client2.jpg")" alt="Client Brand" /></a></li>
+                        <li><a href="#" title="Client Brand">
+                            <img src="@Url.Content("~/Content/img/client3.jpg")" alt="Client Brand" /></a></li>
+                        <li><a href="#" title="Client Brand">
+                            <img src="@Url.Content("~/Content/img/client4.jpg")" alt="Client Brand" /></a></li>
+                    </ul>
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel. <small>- <a href="#">John Smith</a> (Manager, LMN Inc.)</small></blockquote>
+                </div>
+                <!-- .half-->
+                <div class="one_fourth">
+                    <h5>Premium Themes</h5>
+                    <ul class="linklist">
+                        <li><a href="http://themeforest.net/item/newsplus-magazineeditorial-wordpress-theme/4208250">NewsPlus Magazine</a></li>
+                        <li><a href="http://themeforest.net/item/xing-business-ecommerce-wordpress-theme/2953363">Xing Ecommerce</a></li>
+                        <li><a href="http://themeforest.net/item/volt-magazine-editorial-wordpress-theme/1044745">Volt Magazine</a></li>
+                        <li><a href="http://themeforest.net/item/twin-creative-portfolio-and-photography/2355772">Twin Photography</a></li>
+                    </ul>
+                    <!-- .linklist -->
+                </div>
+                <!-- .one_fourth -->
+                <div class="one_fourth last">
+                    <h5>Other Products</h5>
+                    <ul class="linklist">
+                        <li><a href="http://themeforest.net/item/indus-corporate-business-wordpress-theme/667436">Indus WordPress Theme</a></li>
+                        <li><a href="http://themeforest.net/item/hulk-businessportfolio-wordpress-theme/168754">Hulk WordPress Theme</a></li>
+                        <li><a href="http://themeforest.net/item/cruz-modern-business-wordpress/264335">Cruz Modern Business WP</a></li>
+                        <li><a href="http://themeforest.net/item/clickr-landing-page/148535">Clickr Landing Page</a></li>
+                    </ul>
+                    <!-- .linklist -->
+                </div>
+                <!-- .one_fourth last -->
+                <div class="clearf"></div>
+                <!-- clear float -->
+            </div>*@
+            <!-- .wrap_secondary -->
+        </div>
+        <!-- .content -->
+        <div class="secondary_cta">
+            <div class="three_fourth">
+                <h2 class="sc_heading">Просмотреть все фартуки Вы можете у нас в каталоге</h2>
+            </div>
+            <!-- .three_fourth -->
+            <div class="one_fourth last">
+                <a href="ftp://pngn.ru/catalog_f.pdf" target="_blank" class="btn yellow">Каталог фартуков</a>
+            </div>
+            <!-- .one_fourth last -->
+            <div class="clearf"></div>
+            <!-- clear float -->
+        </div>
+        <!-- .secodnary_cta -->
+    </div>
+    <!-- .container -->
+</div>
+<!-- .container_shadow -->
+<div class="footer">
+    <div class="footer_left">
+        &copy; @DateTime.Now.Year <a href="#">Sentado</a>.
+           
+    </div>
+    <!-- .footer_left -->
+    <div class="footer_right">
+        Designed and developed by <a href="#">Richard S. Popov</a>.
+           
+    </div>
+    <!-- .footer_right -->
+</div>
+<!-- .footer -->
+<div class="top_btn"><a href="#" title="Scroll to top"></a></div>
+<!-- top_btn -->
+
+<a href="#popupWasSent" id="wasSent"></a>
+<div style="display:none">
+    <div id="popupWasSent" class="order-popup">
+        <p style="margin-top: 18px;">Спасибо! Ваша заявка принята. Мы с Вами свяжемся в рабочее время.</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#orderForm').fancybox({
+        centerOnScroll: true
+    });
+    
+    $('#wasSent').fancybox({
+        centerOnScroll: true
+    });
+
+    $('.submit').click(function() {
+        jVal.errors = false;
+        jVal.name();
+        jVal.phone();
+        jVal.sendIt();
+        return false;
+    });
+    
+    var jVal = {
+        'name': function () {
+            var ele = $('#Name');
+            var pos = ele.position();
+            ele.parent().append('<div id="nameInfo" class="info"></div>');
+            var nameInfo = $('#nameInfo');
+
+            nameInfo.css({
+                top: pos.top - 1,
+                left: pos.left + ele.width() + 15
+            });
+            if ($.trim(ele.val()).length < 3) {
+                jVal.errors = true;
+                nameInfo.addClass('error').html('Напишите как к Вам обращаться').show();
+                nameInfo.prev().addClass('error-input');
+                ele.removeClass('normal').addClass('wrong');
+            } else if (ele.val().length > 255) {
+                jVal.errors = true;
+                nameInfo.addClass('error').html('Превышен максимальный размер 255 символов').show();
+                ele.removeClass('normal').addClass('wrong').css({ 'font-weight': 'normal' });
+                nameInfo.prev().addClass('error-input');
+            } else {
+                nameInfo.removeClass('error');
+                ele.removeClass('wrong').addClass('normal');
+                nameInfo.prev().removeClass('error-input');
+            }
+        },
+        'phone': function () {
+            var ele = $('#Phone');
+            var pos = ele.position();
+            ele.parent().append('<div id="phoneInfo" class="info"></div>');
+            var phoneInfo = $('#phoneInfo');
+
+            phoneInfo.css({
+                top: pos.top + 4,
+                left: pos.left + ele.width() + 25
+            });
+
+            var patt = /^([\+]{1})?[0-9\-]*$/i;
+
+            if (ele.val().length != 0 && (ele.val().length > 15 || ele.val().length < 5 || !patt.test(ele.val()))) {
+                jVal.errors = true;
+                phoneInfo.addClass('error').html('Введите корректный номер телефона').show();
+                ele.removeClass('normal').addClass('wrong').css({ 'font-weight': 'normal' });
+                phoneInfo.prev().addClass('error-input');
+            } else if (ele.val().length == 0) {
+                jVal.errors = true;
+                phoneInfo.addClass('error').html('Введите номер телефона').show();
+                ele.removeClass('normal').addClass('wrong').css({ 'font-weight': 'normal' });
+                phoneInfo.prev().addClass('error-input');
+            } else {
+                phoneInfo.removeClass('error');
+                ele.removeClass('wrong').addClass('normal');
+                phoneInfo.prev().removeClass('error-input');
+            }
+        },
+        'sendIt': function () {
+            if (!jVal.errors) {
+                $.ajax({
+                    url: '@Url.Action("OrderFinish", "Home")',
+                    type: 'POST',
+                    data: {
+                        Name: $('#Name').val(),
+                        Phone: $('#Phone').val(),
+                        Street: $('#Street').val(),
+                        Home: $('#Home').val(),
+                        Flat: $('#Flat').val()
+                    },
+                    success: function (data) {
+                        $.fancybox.close();
+                        setTimeout(function() {
+                            $('#wasSent').click();
+                        }, 1000);
+                    }
+                });
+
+                $.fancybox.showActivity();
+            }
+        }
+    };
+</script>
