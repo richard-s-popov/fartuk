@@ -29,6 +29,7 @@ namespace fartuk2.Controllers
                     Subject = "Заявка на замер",
                     Message = string.Format("Кто: {0}<br/>" +
                                             "Тел.: {1}<br/>" +
+                                            "Фартук: {5}<br/>" +
                                             "Улица: {2}<br/>" +
                                             "Дом: {3}<br/>" +
                                             "Кв.: {4}<br/>",
@@ -36,7 +37,8 @@ namespace fartuk2.Controllers
                                             model.Phone,
                                             model.Street,
                                             model.Home,
-                                            model.Flat)
+                                            model.Flat,
+                                            model.FartukNumber)
                 };
 
             EmailService.SendMessage(em,

@@ -11,6 +11,8 @@ namespace fartuk2.Models
 
         public string Phone { get; set; }
 
+        public string FartukNumber { get; set; }
+
         public string Street { get; set; }
 
         public string Home { get; set; }

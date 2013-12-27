@@ -6,7 +6,7 @@
 <!-- .option_panel -->
 <div class="header">
     <div class="logo">
-        <img src="@Url.Content("~/Content/img/logo.png")" title="Klix" alt="logo" />
+        <img src="@Url.Content("~/Content/img/logo.png")" title="Sentado" alt="logo" />
     </div>
     <!-- .logo -->
     <div class="callout">
@@ -44,9 +44,8 @@
                     <a id="orderForm" href="#popup" class="btn">Записаться на бесплатный замер</a> 
                     <a href="ftp://pngn.ru/catalog_f.pdf" style="margin-left: 10px;" class="btn yellow" target="_blank">Каталог</a>
                 </p>
-                <p><small>Grab a <a href="#"><strong>Trial Download</strong></a> or <a href="#"><strong>Contact us</strong></a> to know more about the offer.
-                       <br />
-                       *The offer is valid only upto the end of December.  Terms and Conditions apply.</small></p>
+                <p><small>Выберите фартук в <a href="#"><strong>Каталоге</strong></a> и <a href="#"><strong>Сделайте заказ на замер</strong></a> и в ближайшее время мы с Вами свяжемся.
+                       <br /></small></p>
             </div>
             <!-- .promo -->
         </div>
@@ -54,23 +53,23 @@
         <div class="content">
             <div class="wrap">
                 <div class="one_fourth">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/star_32.png")" title="Clean Design" alt="icon" /><h3>Multi Purpose</h3>
-                    <p>The template can be used as a standalone click-through landing page or a content oriented micro site.</p>
+                    <img class="ico_left" src="@Url.Content("~/Content/img/star_32.png")" title="Прозрачное ценообразование" alt="icon" /><h3>Прозрачное ценообразование</h3>
+                    <p>Вы платите только за квадратные метры в которые всё включено и ни копейки больше с гарантией самой низкой цены в городе!</p>
                 </div>
                 <!-- .one_fourth -->
                 <div class="one_fourth">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/screen_off_32.png")" title="Above the fold" alt="icon" /><h3>Above the Fold</h3>
-                    <p>The main call-to-action and product offer resides above the fold, thereby giving better exposure to the offer. </p>
+                    <img class="ico_left" src="@Url.Content("~/Content/img/tools_32.png")" title="Установка в течение 1 часа" alt="icon" /><h3>Установка в течение 1 часа</h3>
+                    <p>Наши монтажники установят Вам фартук в течении часа.</p>
                 </div>
                 <!-- .one_fourth -->
                 <div class="one_fourth">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/tools_32.png")" title="Easy to customize" alt="icon" /><h3>Easy to customize</h3>
-                    <p>The markup is straight-forward. You just need to fill in the dummy content with your own custom content.</p>
+                    <img class="ico_left" src="@Url.Content("~/Content/img/screen_off_32.png")" title="Вы ждёте не больше недели" alt="icon" /><h3>Вы ждёте не больше недели</h3>
+                    <p>Наше производство даже в режиме полной загруженности выдаёт за 6 рабочих дней изделие.</p>
                 </div>
                 <!-- .one_fourth -->
                 <div class="one_fourth last">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/web_layout_32.png")" title="Standard Layout" alt="icon" /><h3>Flexible Grids</h3>
-                    <p>The grids shown on this page can be changed to different combination. Two columns, three columns, full width etc.</p>
+                    <img class="ico_left" src="@Url.Content("~/Content/img/web_layout_32.png")" title="Первоклассный сервис" alt="icon" /><h3>Первоклассный сервис</h3>
+                    <p>Нам важно чтобы Вам понравилось, т.к. мы продолжаем с Вами общение и предлагаем другие лучшие решения.</p>
                 </div>
                 <!-- .one_fourth last -->
                 <div class="clearf"></div>
@@ -125,15 +124,15 @@
                 </div>*@
                 <!-- .half -->
                 <div class="half">
-                    <h4>Наши преимущества или еще какая-нибудь вата</h4>
+                    <h4>Причины по которым фартуки заказывают у нас:</h4>
                     <ul class="checklist">
-                        <li>Marketing and Promotion</li>
-                        <li>Web design and development</li>
-                        <li>Search Engine Optimization</li>
-                        <li>Logo design and branding</li>
-                        <li>Server Side Solutions</li>
-                        <li>Business Consulting</li>
-                        <li>Printing and Media Solutions</li>
+                        <li>Бесплатный замер</li>
+                        <li>Бесплатный монтаж</li>
+                        <li>Бесплатная доставка по городу</li>
+                        <li>Большой каталог готовых решений</li>
+                        <li>Возможность вставить свой рисунок</li>
+                        <li>Смотрится значительно лучше пластика или плитки</li>
+                        <li>Адекватность</li>
                     </ul>
                     <!-- .checklist -->
                 </div>
@@ -149,6 +148,9 @@
                             </div>
                             <div>
                                 @Html.TextBoxFor(m => m.Phone, new { @placeholder = "Номер телефона" })
+                            </div>
+                            <div>
+                                @Html.TextBoxFor(m => m.FartukNumber, new { @placeholder = "Номер фартука из каталога" })
                             </div>
                             <div>
                                 @Html.TextBoxFor(m => m.Street, new { @placeholder = "Улица" })
