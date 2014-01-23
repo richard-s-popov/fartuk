@@ -169,6 +169,7 @@
     <Content Include="Content\img\black_70.png" />
     <Content Include="Content\img\btn.png" />
     <Content Include="Content\img\bullets.png" />
+    <Content Include="Content\img\cena.png" />
     <Content Include="Content\img\check.png" />
     <Content Include="Content\img\client1.jpg" />
     <Content Include="Content\img\client2.jpg" />
@@ -176,12 +177,15 @@
     <Content Include="Content\img\client4.jpg" />
     <Content Include="Content\img\cross_lines.png" />
     <Content Include="Content\img\inner_shade.png" />
+    <Content Include="Content\img\izgotovlenie.png" />
     <Content Include="Content\img\loading.gif" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\montaj.png" />
     <Content Include="Content\img\options.jpg" />
     <Content Include="Content\img\pat2.jpg" />
     <Content Include="Content\img\screen_off_32.png" />
     <Content Include="Content\img\sec_cta_bg.png" />
+    <Content Include="Content\img\services-pic2.png" />
     <Content Include="Content\img\slide1.jpg" />
     <Content Include="Content\img\slide2.jpg" />
     <Content Include="Content\img\slide3.jpg" />
@@ -199,6 +203,7 @@
     <Content Include="Content\img\tools_32.png" />
     <Content Include="Content\img\top.png" />
     <Content Include="Content\img\web_layout_32.png" />
+    <Content Include="Content\img\zamer.png" />
     <Content Include="Content\img\zoom.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />

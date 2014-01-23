@@ -51,24 +51,28 @@
         </div>
         <!-- .featured -->
         <div class="content">
-            <div class="wrap">
+            <div class="wrap our-steps">
                 <div class="one_fourth">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/star_32.png")" title="Прозрачное ценообразование" alt="icon" /><h3>Прозрачное ценообразование</h3>
+                    <img class="ico_left" src="@Url.Content("~/Content/img/cena.png")" title="Прозрачное ценообразование" alt="icon" />
+                    <h3><strong>5550р/м<sup>2</sup></strong> на все фартуки</h3>
                     <p>Вы платите только за квадратные метры в которые всё включено и ни копейки больше с гарантией самой низкой цены в городе!</p>
                 </div>
                 <!-- .one_fourth -->
                 <div class="one_fourth">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/tools_32.png")" title="Установка в течение 1 часа" alt="icon" /><h3>Установка в течение 1 часа</h3>
-                    <p>Наши монтажники установят Вам фартук в течении часа.</p>
+                    <img class="ico_left" src="@Url.Content("~/Content/img/zamer.png")" title="Установка в течение 1 часа" alt="icon" />
+                    <h3>Бесплатный замер в тот же день</h3>
+                    <p>Наши монтажники приедут к Вам на замер в любое удобное для Вас время.</p>
                 </div>
                 <!-- .one_fourth -->
                 <div class="one_fourth">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/screen_off_32.png")" title="Вы ждёте не больше недели" alt="icon" /><h3>Вы ждёте не больше недели</h3>
+                    <img class="ico_left" style="margin-left: 70px;" src="@Url.Content("~/Content/img/services-pic2.png")" title="Вы ждёте не больше недели" alt="icon" />
+                    <h3><strong>5-6 дней</strong> на изготовление</h3>
                     <p>Наше производство даже в режиме полной загруженности выдаёт за 6 рабочих дней изделие.</p>
                 </div>
                 <!-- .one_fourth -->
                 <div class="one_fourth last">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/web_layout_32.png")" title="Первоклассный сервис" alt="icon" /><h3>Первоклассный сервис</h3>
+                    <img class="ico_left" src="@Url.Content("~/Content/img/montaj.png")" title="Первоклассный сервис" alt="icon" />
+                    <h3>Бесплатная доставка и монтаж</h3>
                     <p>Нам важно чтобы Вам понравилось, т.к. мы продолжаем с Вами общение и предлагаем другие лучшие решения.</p>
                 </div>
                 <!-- .one_fourth last -->
@@ -123,13 +127,18 @@
                     </ul>
                 </div>*@
                 <!-- .half -->
-                <div class="half">
-                    <h4>Причины по которым фартуки заказывают у нас:</h4>
+                <div class="half order-on-page">
+                    <h4><strong>Как сделать заказ?</strong></h4>
+                    <h3><strong>1.</strong> Выберите фартук <a href="ftp://pngn.ru/catalog_f.pdf" target="_blank">в каталоге</a></h3>
+                    <h3><strong>2.</strong> Заполните форму справа</h3>
+                    <h3><strong>3.</strong> Или свяжитесь с нами по номеру <strong>(3822) 34-14-50</strong></h3>
+                    <br/>
+                    <span>Причины по которым фартуки заказывают у нас:</span>
                     <ul class="checklist">
                         <li>Бесплатный замер</li>
                         <li>Бесплатный монтаж</li>
                         <li>Бесплатная доставка по городу</li>
-                        <li>Большой каталог готовых решений</li>
+                        <li><a href="ftp://pngn.ru/catalog_f.pdf" target="_blank">Большой каталог</a> готовых решений</li>
                         <li>Возможность вставить свой рисунок</li>
                         <li>Смотрится значительно лучше пластика или плитки</li>
                         <li>Адекватность</li>
@@ -150,16 +159,16 @@
                                 @Html.TextBoxFor(m => m.Phone, new { @placeholder = "Номер телефона" })
                             </div>
                             <div>
-                                @Html.TextBoxFor(m => m.FartukNumber, new { @placeholder = "Номер фартука из каталога" })
+                                @Html.TextBoxFor(m => m.FartukNumber, new { @placeholder = "Номер фартука из каталога (не обязательно)" })
                             </div>
                             <div>
-                                @Html.TextBoxFor(m => m.Street, new { @placeholder = "Улица" })
+                                @Html.TextBoxFor(m => m.Street, new { @placeholder = "Улица (не обязательно)" })
                             </div>
                             <div>
-                                @Html.TextBoxFor(m => m.Home, new { @placeholder = "Дом" })
+                                @Html.TextBoxFor(m => m.Home, new { @placeholder = "Дом (не обязательно)" })
                             </div>
                             <div>
-                                @Html.TextBoxFor(m => m.Flat, new { @placeholder = "Квартира" })
+                                @Html.TextBoxFor(m => m.Flat, new { @placeholder = "Квартира (не обязательно)" })
                             </div>
                             <input name="submit" type="submit" onclick="return false;" class="submit" value="Записаться на замер" />
                         }
@@ -170,47 +179,25 @@
                 <!-- clear float -->
             </div>
             <!-- .wrap_grey -->
-            @*<div class="wrap_secondary">
-                <div class="half">
-                    <h5>Trusted and loved by</h5>
-                    <ul class="clients">
-                        <li><a href="#" title="Client Brand">
-                            <img src="@Url.Content("~/Content/img/client1.jpg")" alt="Client Brand" /></a></li>
-                        <li><a href="#" title="Client Brand">
-                            <img src="@Url.Content("~/Content/img/client2.jpg")" alt="Client Brand" /></a></li>
-                        <li><a href="#" title="Client Brand">
-                            <img src="@Url.Content("~/Content/img/client3.jpg")" alt="Client Brand" /></a></li>
-                        <li><a href="#" title="Client Brand">
-                            <img src="@Url.Content("~/Content/img/client4.jpg")" alt="Client Brand" /></a></li>
-                    </ul>
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel. <small>- <a href="#">John Smith</a> (Manager, LMN Inc.)</small></blockquote>
-                </div>
-                <!-- .half-->
-                <div class="one_fourth">
-                    <h5>Premium Themes</h5>
-                    <ul class="linklist">
-                        <li><a href="http://themeforest.net/item/newsplus-magazineeditorial-wordpress-theme/4208250">NewsPlus Magazine</a></li>
-                        <li><a href="http://themeforest.net/item/xing-business-ecommerce-wordpress-theme/2953363">Xing Ecommerce</a></li>
-                        <li><a href="http://themeforest.net/item/volt-magazine-editorial-wordpress-theme/1044745">Volt Magazine</a></li>
-                        <li><a href="http://themeforest.net/item/twin-creative-portfolio-and-photography/2355772">Twin Photography</a></li>
-                    </ul>
-                    <!-- .linklist -->
-                </div>
-                <!-- .one_fourth -->
-                <div class="one_fourth last">
-                    <h5>Other Products</h5>
-                    <ul class="linklist">
-                        <li><a href="http://themeforest.net/item/indus-corporate-business-wordpress-theme/667436">Indus WordPress Theme</a></li>
-                        <li><a href="http://themeforest.net/item/hulk-businessportfolio-wordpress-theme/168754">Hulk WordPress Theme</a></li>
-                        <li><a href="http://themeforest.net/item/cruz-modern-business-wordpress/264335">Cruz Modern Business WP</a></li>
-                        <li><a href="http://themeforest.net/item/clickr-landing-page/148535">Clickr Landing Page</a></li>
-                    </ul>
-                    <!-- .linklist -->
-                </div>
-                <!-- .one_fourth last -->
-                <div class="clearf"></div>
-                <!-- clear float -->
-            </div>*@
+            <div class="wrap_secondary">
+                <a href="ftp://pngn.ru/catalog_f.pdf" target="_blank">
+                    <div class="samples">
+                        <div class="left-column-samples">
+                            <div class="sample-item item-1"></div>
+                            <div class="sample-item item-2"></div>
+                            <div class="sample-item item-5"></div>
+                            <div class="sample-item item-3"></div>
+                            <div class="sample-item item-4"></div>
+                            <div class="sample-item item-6"></div>
+                        </div>
+                        <div class="right-column-samples">
+                            <div class="sample-item-view item-view-1"></div>
+                            <div class="sample-item-view item-view-2"></div>
+                            <div class="sample-item-view item-view-3"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
             <!-- .wrap_secondary -->
         </div>
         <!-- .content -->

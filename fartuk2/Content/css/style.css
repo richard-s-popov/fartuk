@@ -48,7 +48,7 @@ del { text-decoration:line-through; color:#999 }
 h1, h2, h3, h4, h5 { font-family: "Droid Sans", Arial, Helvetica, Geneva, sans-serif; color:#333; font-weight:normal }
 h1 { font-size: 30px; line-height: 34px; margin-bottom:13px }
 h2 { font-size: 21px; line-height: 30px; margin-bottom:11px }
-h3 { font-size: 17px; line-height: 20px; margin-bottom:11px }
+h3 { font-size: 18px; line-height: 20px; margin-bottom:11px }
 h4 { font-size: 14px; line-height: 21px; margin-bottom:12px }
 h5 { font-size: 12px; line-height: 18px; margin-bottom:12px }
 h1 a, h2 a, h3 a, h4 a, h5 a { color:#333 }
@@ -65,6 +65,46 @@ small, .small { font-size:11px; color:#999; line-height:16px }
 .tiny { font-size:10px; color:#888 }
 .big { font-size:22px; line-height:24px }
 
+.our-steps h3 { text-align: center; }
+.our-steps .one_fourth:hover .ico_left {
+    -webkit-animation: shake 0.4s linear;
+}
+
+@-webkit-keyframes shake {
+	0% {
+	    -webkit-transform: rotate(0deg); 
+	}
+	10% {
+	    -webkit-transform: rotate(10deg); 
+	}	    
+	20% {
+    	-webkit-transform: rotate(0deg); 
+    }
+    30% {
+    	-webkit-transform: rotate(-10deg); 
+    }
+    40% {
+    	-webkit-transform: rotate(0deg); 
+    }
+    50% {
+    	-webkit-transform: rotate(10deg); 
+    }
+	60% {
+		-webkit-transform: rotate(0deg); 
+	}
+	70% {
+		-webkit-transform: rotate(-10deg);
+	}
+	80% {
+    	-webkit-transform: rotate(0deg); 
+    }
+    90% {
+    	-webkit-transform: rotate(10deg); 
+    }
+	100% {
+	    -webkit-transform: rotate(0deg); 
+	} 
+}
 
 /* -- 3. STRUCTURE -- */
 
@@ -96,8 +136,8 @@ small, .small { font-size:11px; color:#999; line-height:16px }
 ul.social { margin:17px 0px 0px; padding:0px; list-style:none; float:right }
 ul.social li { float:left; margin-right:4px }
 ul.social li:last-child { margin-right:0px }
-ul.social li.call { margin-right:10px; padding-right:10px; border-right:1px solid #ccc; font-family:"Droid Sans", Arial, Helvetica, sans-serif; line-height:16px }
-ul.social li.call span { font-size:14px; color:#444; font-weight:bold }
+ul.social li.call {vertical-align: top;margin-right:10px; padding-right:10px; border-right:1px solid #ccc; font-family:"Droid Sans", Arial, Helvetica, sans-serif; line-height:16px }
+ul.social li.call span { font-size:22px; color:#444; font-weight:bold }
 ul.social li a { width:16px; height:16px; display:block; background:url(../img/social_sprite.png) 0px 0px no-repeat }
 ul.social li a.twitter { background-position:0px 0px }
 ul.social li a.twitter:hover { background-position:0px -20px }
@@ -243,7 +283,7 @@ box-shadow: none;
 .yellow, .yellow:visited { background-color:#ffc000; color:#000; border-color:#ebb100; text-shadow:0px 1px 0px rgba(255,255,255,0.3) }
 .yellow:hover { color:#000; background-color:#ffcc00; border-color:#eabb00 }
 .yellow:active { color:#000; background-color:#e0a900; border-color:#ce9b00 }
-.ico_left { float:left; margin-right:10px }
+.ico_left { margin-right: 10px;margin-left: 45px;height: 80px; }
 .clearfix {	display:block }
 .clearfix:after, .clearf { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; margin:0px; padding:0px }
 .last { margin-right:0px }
@@ -309,4 +349,72 @@ box-shadow: none;
 .normal {
         font-weight: normal;
         color: #222;
+}
+
+.samples {
+    width: 835px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.samples .sample-item {
+    width: 500px;
+    height: 99px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 5px;
+}
+
+.samples .item-1 {
+    background: url(../img/fartucs/fartuk_1.jpg);
+}
+
+.samples .item-2 {
+    background: url(../img/fartucs/fartuk_12.jpg);
+}
+
+.samples .item-3 {
+    background: url(../img/fartucs/fartuk_3.jpg);
+}
+
+.samples .item-4 {
+    background: url(../img/fartucs/fartuk_1.jpg);
+}
+
+.samples .item-5 {
+    background: url(../img/fartucs/fartuk_8.1.jpg);
+}
+
+.samples .item-6 {
+    background: url(../img/fartucs/fartuk_8.jpg);
+}
+
+.samples .left-column-samples {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.samples .right-column-samples {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2px;
+}
+
+.samples .sample-item-view {
+    width: 320px;
+    height: 203px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 5px;
+}
+
+.samples .item-view-1 {
+    background: url(../img/fartucs/fartuk_2.jpg)
+}
+
+.samples .item-view-2 {
+    background: url(../img/fartucs/fartuk_4.jpg)
+}
+
+.samples .item-view-3 {
+    background: url(../img/fartucs/fartuk_2.jpg)
 }
