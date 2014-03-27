@@ -53,7 +53,7 @@
         <div class="content">
             <div class="wrap our-steps">
                 <div class="one_fourth">
-                    <img class="ico_left" src="@Url.Content("~/Content/img/cena.png")" title="Прозрачное ценообразование" alt="icon" />
+                    <img class="ico_left" src="@Url.Content("~/Content/img/cena.png")" title="Прозрачное ценообразование" alt="icon" style="height: 74px; margin-left: 60px;" />
                     <h3><strong>5550р/м<sup>2</sup></strong> на все фартуки</h3>
                     <p>Вы платите только за квадратные метры, в которые всё включено и ни копейки больше, с гарантией самой низкой цены в городе!</p>
                 </div>
@@ -170,7 +170,7 @@
                             <div>
                                 @Html.TextBoxFor(m => m.Flat, new { @placeholder = "Квартира (не обязательно)" })
                             </div>
-                            <input name="submit" type="submit" onclick="return false;" class="submit" value="Записаться на замер" />
+                            <input id="submitButton" name="submit" type="submit" onclick="return false;" class="submit" value="Записаться на замер" />
                         }
                     </div>
                 </div>
@@ -225,7 +225,7 @@
     </div>
     <!-- .footer_left -->
     <div class="footer_right">
-        Designed and developed by <a href="#">Richard S. Popov</a>.
+        Designed and developed by <a href="http://vk.com/ibowie">Richard S. Popov</a>.
            
     </div>
     <!-- .footer_right -->
