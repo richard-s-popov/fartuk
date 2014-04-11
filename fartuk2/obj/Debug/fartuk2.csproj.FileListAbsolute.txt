@@ -124,3 +124,4 @@ C:\fartuk\fartuk2\bin\ru\System.Web.WebPages.Razor.resources.dll
 C:\fartuk\fartuk2\obj\Debug\fartuk2.csprojResolveAssemblyReference.cache
 C:\fartuk\fartuk2\obj\Debug\fartuk2.dll
 C:\fartuk\fartuk2\obj\Debug\fartuk2.pdb
+C:\fartuk\fartuk2\bin\fartuk2.dll.config
